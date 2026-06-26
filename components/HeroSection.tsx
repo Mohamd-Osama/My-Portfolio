@@ -58,7 +58,7 @@ export default function HeroSection() {
   };
   const itemVariants = {
     hidden: { opacity: 0, y: 28 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeInOut" } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeInOut" } as any },
   };
 
   return (
@@ -128,7 +128,7 @@ export default function HeroSection() {
                 variants={itemVariants}
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
+                transition={{ duration: 0.8, delay: 0.2 } as any}
                 className="font-mono text-xl sm:text-2xl mb-5 flex items-center gap-0 justify-center lg:justify-start"
                 style={{ color: 'var(--accent)', minHeight: '2rem' }}
               >
@@ -221,7 +221,7 @@ export default function HeroSection() {
                 {/* Photo circle */}
                 <motion.div
                   animate={{ y: [0, -10, 0] }}
-                  transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+                  transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' } as any}
                   className="relative w-80 h-80 sm:w-[460px] sm:h-[460px] rounded-full overflow-hidden"
                   style={{
                     border: '3px solid rgba(0,212,255,0.4)',
@@ -245,7 +245,7 @@ export default function HeroSection() {
                 <motion.div
                   className="absolute -right-8 top-10 glass-card rounded-xl px-4 py-2.5 flex items-center gap-2"
                   animate={{ y: [0, -5, 0] }}
-                  transition={{ duration: 3.2, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
+                  transition={{ duration: 3.2, repeat: Infinity, ease: 'easeInOut', delay: 0.5 } as any}
                   style={{ border: '1px solid rgba(0,212,255,0.3)' }}
                 >
                   <Database size={15} style={{ color: 'var(--accent)' }} />
@@ -261,7 +261,7 @@ export default function HeroSection() {
                 <motion.div
                   className="absolute -left-6 top-1/4 glass-card rounded-xl px-4 py-2.5 flex items-center gap-2"
                   animate={{ y: [0, -5, 0] }}
-                  transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut', delay: 0.8 }}
+                  transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut', delay: 0.8 } as any}
                   style={{ border: '1px solid rgba(245,158,11,0.3)' }}
                 >
                   <Code2 size={15} style={{ color: '#f59e0b' }} />
@@ -277,7 +277,7 @@ export default function HeroSection() {
                 <motion.div
                   className="absolute -left-8 bottom-12 glass-card rounded-xl px-4 py-2.5 flex items-center gap-2"
                   animate={{ y: [0, 5, 0] }}
-                  transition={{ duration: 3.8, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+                  transition={{ duration: 3.8, repeat: Infinity, ease: 'easeInOut', delay: 1 } as any}
                   style={{ border: '1px solid rgba(124,58,237,0.35)' }}
                 >
                   <BarChart2 size={15} style={{ color: '#818cf8' }} />
@@ -294,7 +294,7 @@ export default function HeroSection() {
         <motion.div
           className="absolute bottom-8 left-1/2 -translate-x-1/2"
           animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
+          transition={{ duration: 2, repeat: Infinity } as any}
         >
           <a
             href="#projects"
