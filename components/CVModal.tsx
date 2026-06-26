@@ -51,7 +51,7 @@ export default function CVModal({ isOpen, onClose }: CVModalProps) {
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
             className="fixed inset-4 sm:inset-8 z-[101] flex flex-col rounded-2xl overflow-hidden"
             style={{
               background: 'var(--glass-bg)',

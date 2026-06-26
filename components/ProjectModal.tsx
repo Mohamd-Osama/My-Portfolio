@@ -55,7 +55,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         initial={{ opacity: 0, y: 40, scale: 0.96 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0, y: 40, scale: 0.96 }}
-        transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.35, ease: "easeInOut" }}
         className="fixed inset-3 sm:inset-5 lg:inset-7 z-[91] rounded-2xl overflow-hidden flex flex-col"
         style={{
           background: 'var(--bg-primary)',
